@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
 import {
   SafeAreaView,
@@ -25,7 +17,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import DisplayWeather from './src/components/screens/main.js'
-
+// import GeoLocationCord from './src/components/screens/GeoLocationCord.js'
+ 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -65,6 +58,7 @@ const App = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
       >
+          {/* <GeoLocationCord /> */}
           <DisplayWeather />
       </ScrollView>
     </SafeAreaView>
